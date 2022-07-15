@@ -10,3 +10,7 @@ li:hover {
 li:active {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+ul, li {
+    list-style: none;
+}
