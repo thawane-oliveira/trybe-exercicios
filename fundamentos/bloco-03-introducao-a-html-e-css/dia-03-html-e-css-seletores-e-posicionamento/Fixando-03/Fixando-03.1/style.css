@@ -3,30 +3,35 @@ div:hover {
     border-style: dotted;
 }
 
-div:nth-of-type(1){
-    color: brown;
+div:nth-of-type(1) {
+    background-color: aquamarine;
+    color: red
 }
 
-div:nth-of-type(2){
-    color: rosybrown;
+
+div:nth-of-type(2) {
+    background-color: violet;
+    color: green
 }
 
-div:nth-of-type(3){
-    color: goldenrod;
+
+div:nth-of-type(3) {
+    background-color: blue;
+    color: pink;
+    height: 90px; 
 }
 
-div:nth-of-type(4){
-    color: blueviolet;
+div:nth-of-type(4) {
+    background-color: yellow;
+    color:orange;
 }
 
-div:nth-of-type(5){
-    color: lightcoral;
+
+div:nth-of-type(5) {
+    background-color: brown;
+    color: aliceblue;
 }
 
-h3
-
-div:nth-of-type(3n) {
-    font-size: 30px;
-  }
-
-  h3
+div:nth-of-type(2n+1) > h3 {
+    font-style: italic;
+}
