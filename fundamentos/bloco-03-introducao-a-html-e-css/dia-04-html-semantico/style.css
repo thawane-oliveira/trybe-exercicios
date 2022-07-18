@@ -7,10 +7,18 @@ header, h2 {
 }
 
 img {
-    border-radius: 80%;
+    border-radius: 50%;
     width: 300px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+header, nav, aside, section, h2 {
+    background-color: rgb(195, 241, 226);
+   }
+
+   footer{
+    text-align: right;
+   }
