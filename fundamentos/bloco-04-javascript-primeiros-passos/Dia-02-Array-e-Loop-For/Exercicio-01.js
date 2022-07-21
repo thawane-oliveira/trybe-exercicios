@@ -2,8 +2,8 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercicio 01
 
-// for (let index = 0; index < numbers.length; index +=1) {
-//     console.log(numbers[index]);
+// for (let index = 0; index < numbers.length; index +=1) 
+//     {console.log(numbers[index]);
 // }
 
 // // Exercicio 02
@@ -39,14 +39,25 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercicio 06
 
-let odd = 0;
-for (let index = 1; index < numbers.length; index += 1 ) {
-    if (numbers[index] % 2 !==0) {
-        odd +=1;
-    }
-}
- if (odd === 0) {
-    console.log('Nenhum valor ímpar encontrado');
- } else {
-    console.log(odd);
- }
+// let odd = 0;
+// for (let index = 1; index < numbers.length; index += 1 ) {
+//     if (numbers[index] % 2 !==0) {
+//         odd +=1;
+//     }
+// }
+//  if (odd === 0) {
+//     console.log('Nenhum valor ímpar encontrado');
+//  } else {
+//     console.log(odd);
+//  }
+
+// Exercicio 07
+
+// let menor = numbers[0];
+
+// for (let index = 1; index < numbers.length; index += 1 ) {
+//     if (numbers[index] < menor) {
+//         menor = numbers[index];
+//     }
+// }
+// console.log(menor);
