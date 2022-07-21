@@ -61,3 +61,18 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //     }
 // }
 // console.log(menor);
+
+// Exercicio 08
+
+// let lista = [];
+
+// for (let index = 1; index <= 25; index += 1) {
+//     lista.push(index);
+// }
+// // console.log(lista);
+
+// // Exercicio 09
+
+// for (let index = 0; index < lista.length; index += 1) {
+//     console.log(lista[index] / 2);
+// }
