@@ -52,34 +52,56 @@
 
 //Parte 5
 
-// function maisRepete(numeros) {
-//     let numeroAtual = 0;
-//     let numRepeticoes = 0;
-//     let repeticoesMais = 0;
-//     let maisRepetido = 0;
+function maisRepete(numeros) {
+    let numeroAtual = 0;
+    let numRepeticoesAtual = 0;
+    let maisRepetido = 0;
+    let numRepeticoesMaisRepetido = 0;
 
-//     for (i = 0; i < numeros.length; i += 1) {
+    for (index = 0; index < numeros.length; index += 1) {
+        numeroAtual = numeros[index];
 
-//         for (j = i+1; j < numeros.length; j += 1) {
+        for (index2 = index + 1; index2 < numeros.length; index2 += 1) {
+            if (numeros[index2] === numeroAtual) {
+                numRepeticoesAtual += 1
+            }
+        }
 
-//         }
-//     }
-// }
+        if (numRepeticoesAtual > numRepeticoesMaisRepetido) {
+            numRepeticoesMaisRepetido = numRepeticoesAtual;
+            maisRepetido = numeroAtual;
+        }
+    }
+    return maisRepetido;
+} console.log(maisRepete([2, 3, 2, 14, 5, 14, 8, 2, 3, 14, 14]));
 
 
 //Parte 6
 
-function soma(numeroInteiro) {
-    let total = 0;
-    for (let index = 1; index <= numeroInteiro; index += 1) {
-        total = total + index;
-    }
-    return total;
-} console.log(soma(7));
-
-
-
+// function soma(numeroInteiro) {
+//     let total = 0;
+//     for (let index = 1; index <= numeroInteiro; index += 1) {
+//         total = total + index;
+//     }
+//     return total;
+// } console.log(soma(7));
 
 //Parte 7
+
+// function verificaFimPalavra (palavra, finalPalavra) {
+//     palavra = palavra.split('');
+//     finalPalavra = finalPalavra.split('');
+//     let final = true;
+
+//     for (let index = 0; index < finalPalavra.length; index += 1) {
+//         if (palavra[palavra.length - finalPalavra.length + index] != finalPalavra[index]) {
+//         final = false;
+//     }
+// }
+// return final;
+// }
+
+// console.log(verificaFimPalavra('thawane', 'ane'));
+
 
 
