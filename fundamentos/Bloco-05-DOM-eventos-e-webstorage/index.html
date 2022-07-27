@@ -43,15 +43,20 @@
     </main>
     <script>
 
-      function mudaTexto () {
+      function mudaTexto() {
         let paragrafo = document.getElementsByTagName('p')[1];
         paragrafo.innerHTML = 'Me vejo como pessoa desenvolvedora formada e ganhando acima do patamar mínimo.';
       } mudaTexto();
 
-      function yellowToGreen () {
-        let squareOne = document.getElementsByClassName('.main-content');
-        squareOne.style.backgroundColor = 'pink';
+      function yellowToGreen() {
+        let squareOne = document.getElementsByClassName('main-content')[0];
+        squareOne.style.background = 'rgb(76,164,109)';
       } yellowToGreen();
+
+      function redToWhite () {
+        let squareTwo = document.getElementsByClassName ('center-content')[0];
+        squareTwo.style.background = 'white';
+      } redToWhite();
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
