@@ -53,11 +53,27 @@
         squareOne.style.background = 'rgb(76,164,109)';
       } yellowToGreen();
 
-      function redToWhite () {
+      function redToWhite() {
         let squareTwo = document.getElementsByClassName ('center-content')[0];
         squareTwo.style.background = 'white';
       } redToWhite();
 
+      function correct() {
+        let texto = document.getElementsByTagName('h1')[0];
+        texto.innerHTML = 'JavaScript';
+      } correct();
+
+      function maisuculo() {
+        let caixaAlta = document.getElementsByTagName('p')[0];
+        caixaAlta.innerHTML = caixaAlta.innerHTML.toUpperCase();
+      } maisuculo();
+
+      function todosP() {
+        let paragrafos = document.getElementsByTagName ('p');
+        for (let index = 0; index < paragrafos.length; index += 1) {
+          console.log(paragrafos[index].innerHTML);
+        }
+      } todosP();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
