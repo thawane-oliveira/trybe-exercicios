@@ -98,9 +98,30 @@
       // Parte 9
       for (let index = 1; index <= 3; index += 1) {
         const tresH3 = document.createElement('h3');
-        tresH3.innerHTML = 'Hierophant Green ' + index;
+        tresH3.innerHTML = 'Hierophant Green' + index;
         filhoMain.appendChild(tresH3);
       } 
+      // Parte 2.1
+      const title = document.querySelector('h1');
+      title.className = 'title';
+      // Parte 2.2
+      const tresH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        tresH3[index].className = 'description';
+      }
+      // Parte 2.3
+      const esquerda = document.getElementsByClassName('left-content')[0];
+      filhoMain.removeChild(esquerda);
+     // Parte 2.4
+      const direita = document.getElementsByClassName('right-content')[0];
+      direita.style.marginRight='auto';
+     // Parte 2.5
+      const corDoFundo = document.getElementsByClassName('center-content')[0];
+      corDoFundo.parentNode.style.backgroundColor = 'green';
+     // Parte 2.6
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
