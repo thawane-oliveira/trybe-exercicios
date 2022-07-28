@@ -63,10 +63,11 @@
         texto.innerHTML = 'Exercício 5.1 - JavaScript';
       } correct();
 
-      function maisuculo() {
-        let caixaAlta = document.getElementsByTagName('p')[0];
-        caixaAlta.innerHTML = caixaAlta.innerHTML.toUpperCase();
-      } maisuculo();
+      function maiusculo() {
+        let caixaAlta = document.getElementsByTagName('p');
+        for (let index = 0; index < caixaAlta.length; index += 1) {
+        caixaAlta.innerText = caixaAlta.innerText.toUpperCase();
+      }} maiusculo();
 
       function todosP() {
         let paragrafos = document.getElementsByTagName ('p');
