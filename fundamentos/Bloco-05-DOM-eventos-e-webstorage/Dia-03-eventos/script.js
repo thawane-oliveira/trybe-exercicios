@@ -15,6 +15,8 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 
+ // Exercicio 01
+ 
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   function criaDiasDoMes() {
@@ -42,3 +44,47 @@ function createDaysOfTheWeek() {
     } 
   } 
   criaDiasDoMes();
+
+// Exercicio 02
+
+function criaFeriado(nomeDoBotao) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let novoBotao = document.createElement('button');
+  let novoBotaoID = 'botao-feriado';
+
+  novoBotao.innerHTML = nomeDoBotao;
+  novoBotao.id = 'botao-feriado';
+
+  buttonContainer.appendChild(novoBotao);
+} criaFeriado('Feriados');
+
+// Exercicio 03
+
+function clicaFeriado() {
+  let botaoFeriado = document.querySelector('#botao-feriado');
+  let arrayFeriados = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let novaCor = 'yellowgreen';
+
+  botaoFeriado.addEventListener('click', function() {
+    for (let index = 0; index < arrayFeriados.length; index += 1) {
+      if (arrayFeriados[index].style.backgroundColor === novaCor) {
+        arrayFeriados[index].style.backgroundColor = backgroundColor;
+      } else {
+        arrayFeriados[index].style.backgroundColor = novaCor;
+      }
+    }
+  });
+} clicaFeriado();
+
+// Exercicio 04
+
+function botaoSextaFeira(nomeDoBotao) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let novoBotao = document.createElement('button');
+  let novoBotaoID = 'btn-friday';
+
+  novoBotao.innerHTML = nomeDoBotao;
+  novoBotao.id = novoBotaoID;
+  buttonContainer.appendChild(novoBotao);
+} botaoSextaFeira('Sexta-feira');
