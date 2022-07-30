@@ -113,7 +113,7 @@ sextas(sextasDezembro);
 function mouseEmCima() {
   let dias = document.querySelector('#days');
   dias.addEventListener('mouseover', function(event) {
-  event.target.style.fontSize = '40px';
+  event.target.style.fontSize = '28px';
   });
 }
 
@@ -159,3 +159,23 @@ function selecionaTarefa() {
   }
   });
 } selecionaTarefa();
+
+// Exercicio 10
+
+function corDoDia() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let corDaTask = taskDiv.style.backgroundColor;
+
+  days.addEventListener('click', function (event){
+  let corAlvo = event.target.style.color;
+  if (tarefaSelecionada.length > 0 && corAlvo !== corDaTask) {
+    let color = tarefaSelecionada[0].style.backgroundColor;  
+    event.target.style.color = color;
+  } else if (corAlvo === corDaTask) {
+    event.target.style.color = 'rgb(119,119,119)';
+  }
+  });
+} corDoDia();
+
