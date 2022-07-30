@@ -88,3 +88,22 @@ function botaoSextaFeira(nomeDoBotao) {
   novoBotao.id = novoBotaoID;
   buttonContainer.appendChild(novoBotao);
 } botaoSextaFeira('Sexta-feira');
+
+// Exercicio 05
+
+function sextas(arraySexta) {
+  let capturaSexta = document.querySelector('#btn-friday');
+  let todasSextas = document.getElementsByClassName('friday');
+  let novoTexto = 'Rolo compressor';
+
+  capturaSexta.addEventListener('click', function() {
+   for (let index = 0; index < todasSextas.length; index += 1) {
+    if (todasSextas[index].innerHTML !== novoTexto) {
+      todasSextas[index].innerHTML = novoTexto;
+    } else {
+      todasSextas[index].innerHTML = arraySexta[index];
+    }
+   }
+  });
+} let sextasDezembro = [4, 11, 18, 25];
+sextas(sextasDezembro);
