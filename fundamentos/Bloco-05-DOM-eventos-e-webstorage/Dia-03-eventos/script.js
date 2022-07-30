@@ -145,3 +145,17 @@ function divColorida(color) {
   novaTarefa.style.backgroundColor = color;
   containerTarefas.appendChild(novaTarefa);
 } divColorida('salmon');
+
+// Exercicio 09
+
+function selecionaTarefa() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let minhasTasks = document.querySelector('.task');
+  minhasTasks.addEventListener('click', function(event) {
+  if (tarefaSelecionada.length === 0) {
+    event.target.className = 'task selected';
+  } else {
+    event.target.className = 'task';
+  }
+  });
+} selecionaTarefa();
