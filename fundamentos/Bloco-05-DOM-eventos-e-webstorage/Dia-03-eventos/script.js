@@ -124,3 +124,24 @@ function mouseFora() {
   });
 } mouseEmCima();
   mouseFora();
+
+// Exercicio 07
+
+function adicionaTarefa(tarefa) {
+  let containerTarefas = document.querySelector('.my-tasks');
+  let nomeTarefa = document.createElement('span');
+
+  nomeTarefa.innerHTML = tarefa;
+  containerTarefas.appendChild(nomeTarefa);
+} adicionaTarefa('assistir Jojo');
+
+// Exercicio 08
+
+function divColorida(color) {
+  let containerTarefas = document.querySelector('.my-tasks');
+  let novaTarefa = document.createElement('div');
+
+  novaTarefa.className = 'task';
+  novaTarefa.style.backgroundColor = color;
+  containerTarefas.appendChild(novaTarefa);
+} divColorida('salmon');
