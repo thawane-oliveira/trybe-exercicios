@@ -107,3 +107,20 @@ function sextas(arraySexta) {
   });
 } let sextasDezembro = [4, 11, 18, 25];
 sextas(sextasDezembro);
+
+// Exercicio 06
+
+function mouseEmCima() {
+  let dias = document.querySelector('#days');
+  dias.addEventListener('mouseover', function(event) {
+  event.target.style.fontSize = '40px';
+  });
+}
+
+function mouseFora() {
+  let dias = document.querySelector('#days');
+  dias.addEventListener('mouseout', function(event) {
+  event.target.style.fontSize = '20px';
+  });
+} mouseEmCima();
+  mouseFora();
