@@ -167,8 +167,7 @@ function corDoDia() {
   let days = document.querySelector('#days');
   let taskDiv = document.querySelector('.task');
   let corDaTask = taskDiv.style.backgroundColor;
-
-  days.addEventListener('click', function (event){
+  days.addEventListener('click', function(event){
   let corAlvo = event.target.style.color;
   if (tarefaSelecionada.length > 0 && corAlvo !== corDaTask) {
     let color = tarefaSelecionada[0].style.backgroundColor;  
@@ -182,5 +181,28 @@ function corDoDia() {
 // Bônus 
 
 function addCompromisso() {
-  
-}
+  let input = document.querySelector('#task-input');
+  let botaoInput = document.querySelector('#btn-add');
+  let listaTask = document.querySelector('.task-list');
+
+  botaoInput.addEventListener('click', function(){
+  if (input.value.length > 0) {
+    let novaTask = document.createElement('li');
+    novaTask.innerText = input.value;
+
+    listaTask.appendChild(novaTask);
+    input.value = '';
+  } else {
+    alert('ERRO: Digite pelo menos um caractere.')
+  }
+  });
+  input.addEventListener('keyup', function(event){
+    if (event.key === 'Enter' && input.value.length > 0){
+      let novaTask = document.createElement('li');
+      novaTask.innerText = input.value;
+
+      listaTask.appendChild(novaTask);
+      input.value = '';
+    }
+  });
+} addCompromisso();
