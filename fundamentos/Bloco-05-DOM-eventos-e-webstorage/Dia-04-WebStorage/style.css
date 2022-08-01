@@ -4,9 +4,13 @@
 
 .paragrafo {
     text-align: center;
-border: 5px dotted black;
 padding-left: 400px;
 padding-right: 400px;
+}
+
+p {
+    border: 4px dotted black;
+    padding: 30px;
 }
 
 .botoes {
@@ -23,6 +27,12 @@ padding-right: 400px;
     padding-top: 50px;
     text-align: center;
 }
+
+.botao4 {
+    padding-top: 50px;
+    text-align: center;
+}
+
 .mudaFundo {
     display: inline-block;
     width: 10%;
