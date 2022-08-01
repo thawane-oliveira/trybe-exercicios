@@ -1,20 +1,28 @@
 .titulo {
     text-align: center;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+}
 
 .paragrafo {
     text-align: center;
 border: 5px dotted black;
 padding-left: 400px;
 padding-right: 400px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+}
 
 .botoes {
     padding-top: 50px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
+.botoes2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.botao3 {
+    padding-top: 50px;
+    text-align: center;
+}
 .mudaFundo {
     display: inline-block;
     width: 10%;

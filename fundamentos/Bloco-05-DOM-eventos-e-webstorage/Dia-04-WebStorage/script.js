@@ -26,6 +26,15 @@ document.querySelector('#tamanhoFonte').addEventListener('change', tamanhoFonte)
 
 function espacamento(){
     const espaco = document.querySelector('#espacoLinha').value;
-    document.querySelector('p').style.lineHeight = espaco;
+    document.querySelector('body').style.lineHeight = espaco;
 }
 document.querySelector('#espacoLinha').addEventListener('change', espacamento)
+
+//
+
+function style(){
+    const estilo = document.querySelector('#tipoFonte').value;
+    document.querySelector('body').style.fontFamily = estilo;
+}
+document.querySelector('#tipoFonte').addEventListener('change', style)
+
