@@ -179,3 +179,8 @@ function corDoDia() {
   });
 } corDoDia();
 
+// Bônus 
+
+function addCompromisso() {
+  
+}
