@@ -1,0 +1,46 @@
+.titulo {
+    text-align: center;
+}
+
+.paragrafo {
+    text-align: center;
+padding-left: 400px;
+padding-right: 400px;
+}
+
+p {
+    border: 4px dotted black;
+    padding: 30px;
+}
+
+.botoes {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.botoes2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.botao3 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.botao4 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.mudaFundo {
+    display: inline-block;
+    width: 10%;
+}
+
+.corTexto {
+    display: inline-block;
+    width: 10%;
+}
+
+
