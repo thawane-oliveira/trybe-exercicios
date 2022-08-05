@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+  <form>
+    <div class="field">
+      <label class="label" for="fullName">Nome Completo:</label>
+      <input class="input" type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" maxlength="40"
+        minlength="10" required>
+    </div><br>
+
+    <div class="field">
+      <label class="label"for="email">E-mail:</label>      
+      <input class="input" type="email" id="email" name="userEmail" placeholder="Digite seu e-mail" maxlength="50" minlength="10"required>      
+    </div><br>
+
+    <div class="control">
+      <label>Escolhe seu destino preferido:</label>
+      <br><br>
+      <label for="destiny1">Cidade</label>
+      <input type="radio" id="destiny1" className="radios" name="destination" value="Cidade" required>
+
+      <label for="destiny2">Campo</label>
+      <input type="radio" id="destiny2" className="radios" name="destination" value="Campo" required>
+
+      <label for="destiny3">Praia</label>
+      <input type="radio" id="destiny3" className="radios" name="destination" value="Praia" required>
+
+      <label for="destiny4">Montanhas</label>
+      <input type="radio" id="destiny4" className="radios" name="destination" value="Montanhas" required>
+    </div><br>
+
+    <div><label for="answer">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+        TrybeTrip?</label>
+      <textarea class="input is-hovered" id="answer" name="answer" maxlength="500" placeholder="Digite sua resposta"
+        cols="50" rows="15" required></textarea>
+    </div><br>
+
+    <div class="control"><label for="date">Qual a melhor data para realizar sua viagem?</label>
+      <input id="date" type="date" required>
+    </div><br>
+
+    <div class="control"><label for="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela
+        Trybe?</label>
+      <input id="newsletter" type="checkbox" name="newsletter" required>
+    </div><br>
+
+    <div class="control"><label for="agree">Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+        concursos futuros.</label>
+      <input id="agree" name="agree" required type="checkbox" disabled>
+    </div><br>
+
+    <div class="control"><button id="sendButton" name="sendButton" class="button is-success is-hovered">Envie suas
+      informações</button></div><br>
+
+    <div class="control"><button id="clear" name="clearAll" class="button is-danger is-hovered">Limpe as informações</button><br></div>
+    
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
