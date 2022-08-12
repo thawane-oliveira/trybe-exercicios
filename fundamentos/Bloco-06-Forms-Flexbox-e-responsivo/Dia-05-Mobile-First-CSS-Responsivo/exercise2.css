@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: beige;
+  }
+
+  .container {
+    text-align: justify;
+    margin: 30px 30px;
+    flex-direction: column;
+  }
+
+  p {
+    line-height: 30px;
+  }
+}
+
+/* // */
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: paleturquoise;
+  }
+
+  .container {
+    text-align: justify;
+    margin: 30px 30px;
+    flex-wrap: wrap;
+  }
+
+  p {
+    line-height: 20px;
+  }
+}
+
+/* // */
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: palegoldenrod;
+  }
+
+  .container {
+    text-align: justify;
+    margin: 30px 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  p {
+    line-height: 20px;
+  }
+}
