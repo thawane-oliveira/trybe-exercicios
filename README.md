@@ -44,8 +44,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-5: _[Projeto - Meme Generator](https://github.com/tryber/sd-025-a-project-meme-generator/pull/22)_
 - [X] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-025-a-project-pixels-art/pull/18)_
 - [X] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-025-a-project-todo-list/pull/9)_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]
-- [X] 5-7: _[Projeto - Carta Misteriosa]
+- [X] 5-7: [Projeto - Adivinhe a Cor]
+- [X] 5-7: [Projeto - Carta Misteriosa]
 
 ##### Bloco 6: HTML & CSS avançado 
 
