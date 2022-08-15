@@ -43,13 +43,18 @@ const customerInfo = (order) => {
   const number = order[address].number;
   const apartment = order[address].apartment;
 
-  console.log(`Olá ${deliveryPerson}, entrega para: ${name}, telefone: ${phone}, rua ${street}, número ${number}, apartamento ${apartment}.`);
+  // console.log(`Olá ${deliveryPerson}, entrega para: ${name}, telefone: ${phone}, rua ${street}, número ${number}, apartamento ${apartment}.`);
 }
 
 customerInfo(order);
 
 const orderModifier = (order) => {
+  const newPerson = order.name = 'Giorno Giovanna';
+  const newValue = order.payment.total = '50';
+  const pizza = Object.keys(order.order.pizza);
+  const drink = order.order.drinks.coke.type;
 
+  console.log(`Olá ${newPerson}, o total do seu pedido de ${pizza[0]}, ${pizza[1]} e ${drink} é de R$ ${newValue},00.`);
 }
 
 orderModifier(order);
