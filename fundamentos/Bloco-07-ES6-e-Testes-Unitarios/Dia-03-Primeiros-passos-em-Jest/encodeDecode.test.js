@@ -4,19 +4,19 @@ describe('testa as funções encode e decode', () => {
   it('encode é uma função', () => {
     expect(typeof encode).toEqual('function');
   });
-  it ('converte apenas a volga a em número 1', () => {
+  it ('converte apenas a vogal a em número 1', () => {
     expect(encode('amada')).toEqual('1m1d1');
   });
-  it ('converte apenas a volga e em número 2', () => {
+  it ('converte apenas a vogal e em número 2', () => {
     expect(encode('ele')).toEqual('2l2');
   });
-  it ('converte apenas a volga i em número 3', () => {
+  it ('converte apenas a vogal i em número 3', () => {
     expect(encode('mimi')).toEqual('m3m3');
   });
-  it ('converte apenas a volga o em número 4', () => {
+  it ('converte apenas a vogal o em número 4', () => {
     expect(encode('ovo')).toEqual('4v4');
   });
-  it ('converte apenas a volga u em número 5', () => {
+  it ('converte apenas a vogal u em número 5', () => {
     expect(encode('ubuntu')).toEqual('5b5nt5');
   });
   it ('consulta se o retorno tem o mesmo número de caracteres', () => {
