@@ -18,6 +18,8 @@ const dragon = {
   damage: undefined,
 };
 
+const battleMembers = { mage, warrior, dragon };
+
 const dragonAtk = (dragon) => {
   const minDmg = 15;
   const maxDmg = Math.floor(Math.random() * dragon.strength);
@@ -49,4 +51,30 @@ const mageAtk = (mage) => {
   } return stat;
 };
 
-const battleMembers = { mage, warrior, dragon };
+const gameActions = {
+  warriorTurn: (warriorAtk) => {
+    const warriorDmg = warriorAtk(warrior);
+    dragon.healthPoints -= warriorDmg;
+    warrior.damage = warriorDmg
+  },
+  mageTurn: (mageAtk) => {
+    const stat = mageAtk(mage);
+    const mageDmg = stat.dmgProvoked;
+    mage.mana -= stat.spentMana;
+    dragon.healthPoints -= mageDmg;
+    mage.damage = mageDmg;
+  },
+  dragonTurn: (dragonAtk) => {
+    const dragonDmg = dragonAtk(dragon);
+    mage.healthPoints -= dragonDmg;
+    warrior.healthPoints -= dragonDmg;
+    dragon.damage = dragonDmg;
+  },
+
+  result: () => battleMembers,
+};
+
+gameActions.warriorTurn(warriorAtk);
+gameActions.warriorTurn(mageAtk);
+gameActions.dragonTurn(dragonAtk);
+console.log(gameActions.result());
