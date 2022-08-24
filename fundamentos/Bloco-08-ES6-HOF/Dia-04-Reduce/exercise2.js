@@ -69,4 +69,5 @@ const books = [
 
 const reduceNames = books.reduce((acc, curr) => `${acc} ${curr.author.name},`, '');
 
-console.log(reduceNames);
+
+console.log(reduceNames.substring(0, reduceNames.length - 1) + '.');

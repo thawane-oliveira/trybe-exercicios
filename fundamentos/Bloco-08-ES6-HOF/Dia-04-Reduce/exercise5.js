@@ -9,7 +9,7 @@ const names = [
 // }
 
 const containsA = names.reduce((acc, curr) => {
-  curr.split('').forEach(letra => (letra === 'a' || letra === 'A') ? acc += 1 : acc);
+    curr.split('').forEach(letra => (letra === 'a' || letra === 'A') ? acc += 1 : acc);
   return acc;
 }, 0);
 
