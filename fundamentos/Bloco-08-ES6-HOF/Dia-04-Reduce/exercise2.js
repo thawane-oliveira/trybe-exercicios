@@ -64,10 +64,20 @@ const books = [
 // const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
 // function reduceNames() {
-//   // escreva seu código aqui
+//   const reduce = books.reduce((acc, curr) => `${acc} ${curr.author.name},`, '');
+//   const result = reduce.substring(0, reduce.length - 1);
+//   return result + '.';
 // }
 
-const reduceNames = books.reduce((acc, curr) => `${acc} ${curr.author.name},`, '');
+// const reduceNames = () => {
+//   const reduce = books.reduce((acc, curr) => `${acc} ${curr.author.name},`, '');
+//   const result = reduce.substring(0, reduce.length - 1);
+//   return result + '.';
+// }
+
+let reduceNames = books
+  .reduce((acc, curr) => `${acc} ${curr.author.name},`, '');
+  reduceNames = reduceNames.substring(0, reduceNames.length - 1) + '.';
 
 
-console.log(reduceNames.substring(0, reduceNames.length - 1) + '.');
+console.log(reduceNames);
