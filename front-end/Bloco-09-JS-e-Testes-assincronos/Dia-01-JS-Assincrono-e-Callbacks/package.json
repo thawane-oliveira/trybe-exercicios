@@ -1,0 +1,15 @@
+{
+  "name": "dia-01-js-assincrono-e-callbacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Fixando-03.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  }
+}
