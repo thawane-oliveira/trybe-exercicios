@@ -34,3 +34,4 @@ getCountry(countryName, printErrorMessage);
 //  - Em caso de sucesso: "A moeda corrente do Brasil é Real"
 //  - Em caso de erro: "Erro ao selecionar país: País não encontrado"
 getCountry(countryCurrency, printErrorMessage);
+
