@@ -71,32 +71,26 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 9: Assincronicidade & Callbacks 
+##### Bloco 9: JavaScript & Testes Assíncronos 
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [X] 9-2: _JavaScript Promises_
+- [X] 9-3: _Jest - Testes Assíncronos_
+- [X] 9-4: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-025-a-project-shopping-cart/pull/4)_
 
-##### Bloco 10: Jest 
+##### Bloco 10: Introdução - React
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [X] 11-1: _'Hello, world!' no React!_
+- [X] 11-2: _Componentes React_
+- [X] 11-3: _[Projeto - Solar System](https://github.com/tryber/sd-025-a-project-solar-system/pull/4)_
 
-##### Bloco 11: Introdução - React
+##### Bloco 11: React  
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
-
-##### Bloco 12: React  
-
-- [ ] 12-1: _Components com estado_
+- [X] 12-1: _Components com estado_
 - [ ] 12-2: _Eventos e formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
-##### Bloco 13: React
+##### Bloco 12: React
 
 - [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [ ] 13-2: _Ciclo de vida de componentes em React_
