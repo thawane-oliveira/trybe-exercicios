@@ -11,7 +11,7 @@ const { expect } = chai;
 
 chai.use(chaiHttp);
 
-const mockFile = JSON.stringify({ 
+const mockFile = JSON.stringify({
   brands: [
     {
       id: 1,
@@ -53,7 +53,7 @@ const mockFile = JSON.stringify({
 
 describe('Testando a API Cacau Trybe', function () {
   sinon.stub(fs.promises, 'readFile')
-  .resolves(mockFile);
+    .resolves(mockFile);
   describe('Usando o método GET em /chocolates', function () {
     it('Retorna a lista completa de chocolates!', async function () {
       const output = [
@@ -123,10 +123,10 @@ describe('Testando a API Cacau Trybe', function () {
   describe('Teste de integração do GET no /chocolates/local', function () {
     it('Quantidade total de chocolates', async function () {
       const response = await chai.request(app)
-      .get('/chocolates/total');
+        .get('/chocolates/total');
 
       expect(response.status).to.be.equal(200);
-      expect(response.body).to.deep.equal({totalChocolates: 4});
+      expect(response.body).to.deep.equal({ totalChocolates: 4 });
     });
   });
 });
