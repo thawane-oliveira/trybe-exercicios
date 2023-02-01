@@ -160,4 +160,36 @@ describe('Testando a API Cacau Trybe', function () {
       expect(response.body).to.deep.equal([]);
     });
   });
+
+  describe('Método PUT em /chocolates/:id', function () {
+    it('Atualiza um chocolate que já existe', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/1').send({
+        name: 'Mint Pretty Good',
+        brandId: 2,
+      });
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body.chocolate).to.deep.equal({
+        id: 1,
+        name: 'Mint Pretty Good',
+        brandId: 2,
+      });
+    });
+      
+    it('Caso não exista determinado chocolate, exibe erro', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/555').send({
+        name: 'Mint Pretty Good',
+        brandId: 2,
+        });
+      
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal({
+        message: 'chocolate not found',
+      });
+    });
+  });
 });
