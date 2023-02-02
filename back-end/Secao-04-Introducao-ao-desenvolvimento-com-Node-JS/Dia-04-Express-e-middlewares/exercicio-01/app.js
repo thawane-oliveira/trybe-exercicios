@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 app.post('/signup',
-(_req, res) => {
+(req, res) => {
   const { email, password, firstName, phone } = req.body;
 
   if ([email, password, firstName, phone].includes(undefined)) {
