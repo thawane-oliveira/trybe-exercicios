@@ -16,7 +16,6 @@ services:
     environment:
       MYSQL_USER: root
       MYSQL_PASSWORD: password
-      MYSQL_DATABASE: TypeScriptExpress
       MYSQL_HOST: db
       JWT_SECRET: secretJWT
       API_HOST: 'node'

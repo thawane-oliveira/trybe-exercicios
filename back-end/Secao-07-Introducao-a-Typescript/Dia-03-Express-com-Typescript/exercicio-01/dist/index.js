@@ -8,8 +8,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 const PORT = 8000;
 app.get('/', (_req, res) => {
-    res.status(200).send('Express + TypeScript');
+    res.status(200).json({ message: 'xablau' });
 });
 app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
+    console.log(`Servidor rodando na porta ${PORT}`);
 });
