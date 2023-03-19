@@ -56,7 +56,7 @@ class Student {
   averageGrades(): number {
     const sumGrades = this.sumGrades();
     const divider = this.examGrades.length + this.assignmentsGrades.length;
-    return sumGrades / divider;
+    return Math.round(sumGrades / divider);
   } 
 }
 
